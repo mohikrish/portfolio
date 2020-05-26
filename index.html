@@ -343,38 +343,35 @@
     </section>
 
 	 <section class="resume-section p-6 p-lg-5 d-flex align-items-center" id="Contact Me">
-     	<head>
-		<link rel="stylesheet" href="2.css"/>
-		<link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'/>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	</head>
+     	<header>
+	<h1>Contact us</h1>
+</header>
 
-	<body>
-		<div class = "frame">
-<div id = "button_open_envelope">
-				Email me
-			</div>
-			<div class = "message">
-				<form method="post" action="contact.php">
-					<input type="text" name="name" id="name" placeholder=" Name* " required>
-			
-					<input type="email" name="email" id="email" placeholder=" Email* " required pattern="^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$">
-				
-					<input type="text" name="phone" id="phone" placeholder=" Phone (optional)" autofocus> 
-				
-					<textarea name="message" id="messarea" placeholder=" Message* " required></textarea>
-			
-					<input type="text" name="address" id="address" style="display: none;">
-					<input type="submit" value="Send" id="send">
-				</form>
-			</div>
-			<div class = "bottom"></div>			
-			<div class = "left"></div>
-			<div class = "right"></div>
-			<div class = "top"></div>
-			<script src="js/script.js"></script>
-		</div>
-	</body>
+<div id="form">
+
+<div class="fish" id="fish"></div>
+<div class="fish" id="fish2"></div>
+
+<form id="waterform" method="post">
+
+<div class="formgroup" id="name-form">
+    <label for="name">Your name*</label>
+    <input type="text" id="name" name="name" />
+</div>
+
+<div class="formgroup" id="email-form">
+    <label for="email">Your e-mail*</label>
+    <input type="email" id="email" name="email" />
+</div>
+
+<div class="formgroup" id="message-form">
+    <label for="message">Your message</label>
+    <textarea id="message" name="message"></textarea>
+</div>
+
+	<input type="submit" value="Send your message!" />
+</form>
+</div>
     </section>
 
     
